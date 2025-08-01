@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --cor-fundo: #202024;
+    --cor-header: #121214;
+    --cor-infos: #323238;
+    --cor-transacao: #29292e;
+    --verde-escuro: #015f43;
+    --verde-claro: #00875f;
+    --verde-mais-claro: #00b37e;
+    --vermelho: #f75a68;
+    --branco: #e1e1e6;
+    --cinza: #c4c4cc;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.center{
+    align-items: center;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+header{
+    background-color: var(--cor-header);
+    gap: 40vw;
+    height: 20vh;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+header h1{
+    color: var(--branco);
+}
+
+header button{
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    border-radius: 6px;
+    height: 50px;
+}
+
+header div, header button{
+    margin-top: 20px;
+}
+
+main{
+    max-width: 90%;
+    margin: auto;
+}
+
+.info{
+    background-color: var(--cor-infos);
+    width: 25vw;
+    color: var(--cinza);
+    height: 127px;
+    padding: 10px;
+}
+
+.info div{
+    gap: 200px;
+}
+
+.total{
+    background-color: var(--verde-escuro);
+}
+
+.valores{
+    margin: 50px 0 0 20px;
+    font-size: 1.5em;
+}
