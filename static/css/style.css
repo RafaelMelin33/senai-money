@@ -44,7 +44,7 @@ body {
 header{
     background-color: var(--cor-header);
     gap: 40vw;
-    height: 20vh;
+    height: 25vh;
 }
 
 header img{
@@ -72,16 +72,32 @@ main{
     margin: auto;
 }
 
+.infos{
+    position: relative;
+    top: -5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
 .info{
     background-color: var(--cor-infos);
     width: 25vw;
     color: var(--cinza);
-    height: 127px;
+    height: 100px;
     padding: 10px;
 }
 
 .info div{
     gap: 200px;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+.info div p{
+    margin-top: 5px;
 }
 
 .total{
@@ -89,6 +105,38 @@ main{
 }
 
 .valores{
-    margin: 50px 0 0 20px;
+    position: relative;
+    top: 20px;
+    left: 12px;
+    /* margin: 20px 10px 0 20px; */
     font-size: 1.5em;
+}
+
+table{
+    width: 10px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+tr{
+    background-color: var(--cor-transacao);
+    width: 100%;
+    color: var(--cinza);
+    margin: 10px 0;
+    display: flex;
+    padding: 10px 10px;
+    gap: 90px;
+}
+
+td{
+    width: 209px;
+    display: flex;
+}
+
+.positivo{
+    color: var(--verde-mais-claro);
+}
+
+.negativo{
+    color: var(--vermelho);
 }
