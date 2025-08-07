@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai Money</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="d-flex around">
+        <div class="d-flex">
+            <img src="static/img/logo_senai_money.png" alt="">
+            <h1>SENAI Money</h1>
+        </div>
+        <button>Nova transação</button>
+    </header>
+    <div class="pop_up">
+        <div>
+            <h1>Nova transação</h1>
+            <form action="">
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição">
+                <input type="text" name="preco" id="preco" placeholder="Preço">
+                <input type="text" name="categoria" id="categoria" placeholder="Categoria">
+                <div class="d-flex between">
+                    <button>
+                        <img src="static/img/seta_cima_icon.png" alt="">
+                        Entrada
+                    </button>
+                    <button>
+                        <img src="static/img/seta_baixo_icon.png" alt="">
+                        Saída
+                    </button>
+                </div>
+                <button class="verde">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <section class="infos d-flex evenly">
+            <div class="info">
+                <div class="d-flex around">
+                    <p>Entradas</p>
+                    <img src="static/img/seta_cima_icon.png" alt="icon seta cima">
+                </div>
+                <p class="valores">R$17.400,00</p>
+            </div>
+            <div class="info">
+                <div class="d-flex around">
+                    <p>Saídas</p>
+                    <img src="static/img/seta_baixo_icon.png" alt="icon seta baixo">
+                </div>
+                <p class="valores">R$1.259,00</p>
+            </div>
+            <div class="info total">
+                <div class="d-flex around">
+                    <p>Total</p>
+                    <img src="static/img/cifrao_icon.png" alt="icon cifrão">
+                </div>
+                <p class="valores">R$16.141,00</p>
+            </div>
+        </section>
+        <section>
+            <form action="">
+                <div class="d-flex between">
+                    <input type="text" name="busca_transacao" id="busca_transacao" placeholder="Busque uma transação">
+                    <button>
+                        <img src="static/img/lupa_icon.png" alt="lupa icon">
+                        Buscar
+                    </button>
+                </div>
+            </form>
+            <table>
+                <tr>
+                    <td>Desenvolvimento de site</td>
+                    <td class="positivo">R$ 12.000,00</td>
+                    <td>Venda</td>
+                    <td>13/04/2022</td>
+                </tr>
+                <tr>
+                    <td>Hamburguer</td>
+                    <td class="negativo">- R$ 59,00</td>
+                    <td>Alimentação</td>
+                    <td>10/04/2022</td>
+                </tr>
+                <tr>
+                    <td>Aluguel do apartamento</td>
+                    <td class="negativo">- R$ 1.200,00</td>
+                    <td>Casa</td>
+                    <td>27/03/2022</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td class="positivo">R$ 5.400,00</td>
+                    <td>Venda</td>
+                    <td>15/03/2022</td>
+                </tr>
+    </main>
+</body>
+
+</html>
